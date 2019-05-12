@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	padding-bottom: 30px;
+}
+li {
+	list-style: none;
+}
+.chat-window {
+    height: 100%;
+}
+.display-message {
+	height: 516px;
+    /* display: block; */
+    overflow-y: scroll;
+}
+.display-message ul li {
+
+}
+.type-message textarea {
+	    width: 90%;
+}
+.type-message input {
+    background: #ccc;
+    border: 1px solid #ccc;
+    position: absolute;
+    padding: 10px;
+}
+.username {
+	font-weight: bold;
+}
