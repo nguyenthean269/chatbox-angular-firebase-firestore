@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<h4>{{data.message | uppercase}} Details</h4>
+
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}} {{item.message}}
+  </li>
+</ul>
+
+
+<input (keydown)="keyDownFunction($event, data)" [(ngModel)]="data.message" placeholder="Nhập tin nhắn"/>
+<button (click)="open($event, data)" type="button">Button</button>
+
+<router-outlet></router-outlet>
